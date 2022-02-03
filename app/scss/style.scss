@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Roboto"; 
+    src: url("../fonts/roboto/Roboto.woff2"); 
+    font-style: normal; 
+    font-weight: normal; 
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Roboto"; 
+    src: url("../fonts/roboto/Robotobold.woff2"); 
+    font-style: normal; 
+    font-weight: bold; 
+    font-display: swap;
+} 
+body {
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    color: #000000;
+    background: #F2F6F8;
+}
+h2 {
+    color: #247CCD;
+}
+ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.sr-only {
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+}
