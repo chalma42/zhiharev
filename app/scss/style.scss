@@ -1,26 +1,172 @@
 @font-face {
-    font-family: "Roboto"; 
-    src: url("../fonts/roboto/Roboto.woff2"); 
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latohairline.woff2"); 
+    font-style: normal; 
+    font-weight: 100; 
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latohairlineitalic.woff2"); 
+    font-style: italic; 
+    font-weight: 100; 
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latothin.woff2"); 
+    font-style: normal; 
+    font-weight: 200; 
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latothinitalic.woff2"); 
+    font-style: italic; 
+    font-weight: 200; 
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latolight.woff2"); 
+    font-style: normal; 
+    font-weight: 300; 
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latolightitalic.woff2"); 
+    font-style: italic; 
+    font-weight: 300; 
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latoregular.woff2"); 
     font-style: normal; 
     font-weight: normal; 
     font-display: swap;
 } 
 @font-face {
-    font-family: "Roboto"; 
-    src: url("../fonts/roboto/Robotobold.woff2"); 
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latoitalic.woff2"); 
+    font-style: italic; 
+    font-weight: normal; 
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latomedium.woff2"); 
+    font-style: normal; 
+    font-weight: 500; 
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latomediumitalic.woff2"); 
+    font-style: italic; 
+    font-weight: 500; 
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latosemibold.woff2"); 
+    font-style: normal; 
+    font-weight: 600; 
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latosemibolditalic.woff2"); 
+    font-style: italic; 
+    font-weight: 600; 
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latobold.woff2"); 
     font-style: normal; 
     font-weight: bold; 
     font-display: swap;
 } 
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latobolditalic.woff2"); 
+    font-style: italic; 
+    font-weight: bold; 
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latoheavy.woff2"); 
+    font-style: normal; 
+    font-weight: 800; 
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latoheavyitalic.woff2"); 
+    font-style: italic; 
+    font-weight: 800; 
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latoblack.woff2"); 
+    font-style: normal; 
+    font-weight: 900; 
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Lato"; 
+    src: url("../fonts/lato/latoblackitalic.woff2"); 
+    font-style: italic; 
+    font-weight: 900; 
+    font-display: swap;
+}
+/*Шрифт Bebas Neue*/
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue/bebasneuethin.woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue/bebasneuelight.woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue/bebasneuebook.woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue/bebasneueregular.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebasneue/bebasneuebold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     margin: 0;
-    font-family: Roboto;
+    font-family: Lato;
+    font-weight: normal;
     font-style: normal;
     color: #000000;
     background: #F2F6F8;
 }
 h2 {
-    color: #247CCD;
+    font-family: 'Bebas Neue';
+    font-size: 56px;
 }
 ul {
     margin-block-start: 0em;
@@ -47,4 +193,92 @@ p {
     border: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
+}
+
+header {
+    border: 1px solid red;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(../img/head/head-bg.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.menu {
+    border: 1px solid blue;
+    width: 445px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #FFD233, #FFD233 270px, transparent 270px, transparent 100%);
+}
+.menu__picture {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menu__image {}
+
+.menu__text-block {
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.menu__text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #0F1116;
+    width: 115px;
+}
+.menu__title {
+    font-family: Bebas Neue;
+    font-size: 56px;
+    line-height: 56px;
+    color: #0F1116;
+}
+.menu__navigation {
+    width: 270px;
+    margin-bottom: 60px;
+}
+ul.menu__navigation li {
+    margin-bottom: 15px;
+}
+.menu__navigation a {
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu__point {
+    width: 270px;
+    margin-bottom: 20px;
+}
+ul.menu__point li,
+ul.menu__point li a {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.menu__addr::before {
+    content: url(../img/head/geo.png);
+    margin-right: 10px;
+}
+.menu__tel::before {
+    content: url(../img/head/tel.png);
+    margin-right: 10px;
 }

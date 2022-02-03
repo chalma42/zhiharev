@@ -36,7 +36,7 @@ function images() {
 
 function scripts() {
     return src([
-        'app/js/video.js',
+        //'app/js/video.js',
         'app/js/script.js'
     ])
     .pipe(concat('script.min.js'))
