@@ -205,8 +205,9 @@ header {
     justify-content: flex-end;
     align-items: center;
     background: url(../img/head/head-bg.jpg) no-repeat;
-    background-size: 100% auto;
+    background-size: auto 100%;
     background-position: top center;
+    transition: all .3s;
 }
 .menu {
     width: 445px;
@@ -226,9 +227,21 @@ header {
 }
 .menu.full {
     background-position: 0px 0;
-    height: 100vh;
 }
-
+.menu__arrow {
+    position: absolute;
+    top: 0;
+    right: -39px;
+    padding: 5px;
+    background-color: #fcd755;
+    transition: all .3s;
+    display: none;
+}
+.menu__arrow img {
+    width: 30px;
+    transform: rotate(180deg);
+    transition: all .3s;
+}
 .menu__picture {
     width: 100%;
     height: 270px;
@@ -236,8 +249,11 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    transition: all .3s;
 }
-.menu__image {}
+.menu__image {
+    transition: all .3s;
+}
 
 .menu__text-block {
     height: 186px;
@@ -245,6 +261,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    transition: all .3s;
 }
 .menu__text {
     font-weight: bold;
@@ -252,11 +269,13 @@ header {
     line-height: 22px;
     text-align: right;
     width: 115px;
+    transition: all .3s;
 }
 .menu__title {
     font-family: Bebas Neue;
     font-size: 56px;
     line-height: 56px;
+    transition: all .3s;
 }
 .menu__button {
     width: 284px;
@@ -276,10 +295,12 @@ header {
     align-items: center;
     position: relative;
     top: -30px;
+    transition: all .3s;
 }
 .menu__navigation {
     width: 270px;
     margin-bottom: 60px;
+    transition: all .3s;
 }
 ul.menu__navigation li {
     margin-bottom: 15px;
@@ -296,6 +317,7 @@ ul.menu__navigation li {
 .menu__point {
     width: 270px;
     margin-bottom: 20px;
+    transition: all .3s;
 }
 ul.menu__point li,
 ul.menu__point li a {
@@ -331,6 +353,7 @@ ul.menu__point li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .3s;
 }
 .header__title {
     width: 100%;
@@ -341,6 +364,7 @@ ul.menu__point li a {
     text-align: center;
     color: #ffffff;
     margin-bottom: 100px;
+    transition: all .3s;
 }
 .header__brands {
     width: 100%;
@@ -348,6 +372,7 @@ ul.menu__point li a {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 100px;
+    transition: all .3s;
 }
 .header__brand {}
 
@@ -420,6 +445,7 @@ main {
 }
 .why-us__item-title.more {
     margin-top: 40px;
+    font-weight: bold;
 }
 .why-us__item-text {
     font-size: 18px;
@@ -705,3 +731,281 @@ footer {
     right: 125px;
     top: 10px;
 }
+
+@media (max-width: 1599px) {
+    header {
+        height: 666px;
+    }
+    ul.menu__navigation li {
+        margin-bottom: 10px;
+    }
+    ul.menu__point li, 
+    ul.menu__point li a {
+        margin-bottom: 10px;
+    }
+    .header__title {
+        line-height: 70px;
+        margin-bottom: 60px;
+    }
+    .header__brands {
+        margin-bottom: 40px;
+    }
+    .menu__navigation {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .menu {
+        width: 350px;
+    }
+    .header__body,
+    .why-us,
+    .about,
+    .trust-us,
+    .how-work,
+    .for-partners,
+    .special-offer {
+        width: calc(100% - 350px);
+    }
+    .header__title {
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .why-us__title,
+    .about__title,
+    .trust-us__title,
+    .how-work__title,
+    .for-partners__title,
+    .special-offer__title {
+        font-size: 48px;
+        margin-left: 20px;
+    }
+    .why-us__list,
+    .about__list,
+    .trust-us__text,
+    .trust-us__brands,
+    .trust-us__manufacturers-block,
+    .how-work__list,
+    .for-partners__list,
+    .special-offer__list {
+        margin-left: 20px;
+    }
+    .about__list,
+    .trust-us__brands,
+    .trust-us__manufacturers-block,
+    .how-work__list,
+    .for-partners__list,
+    .special-offer__list {
+        width: calc(100% - 20px);
+    }
+    .why-us__item {
+        margin-bottom: 20px;
+    }
+    .why-us__item-title,
+    .why-us__item-title.more {
+        font-size: 20px;
+    }
+    .why-us__item-title.more {
+        margin-top: 20px;
+    }
+    .why-us__item-text,
+    .about__text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .why-us__item.сourier::before,
+    .why-us__item.master::before,
+    .why-us__item.consultation::before {
+        transform: scale(0.8);
+        margin-right: 5px;
+    }
+    .about__text {
+        text-align: left;
+    }
+    .how-work__item {
+        margin: 0px 10px;
+    }
+    .how-work__name {
+        font-size: 14px;
+    }
+    .how-work__text {
+        font-size: 13px;
+    }
+    .trust-us__brands {
+        justify-content: space-around;
+    }
+    .for-partners__name,
+    .for-partners__text {
+        font-size: 16px;
+    }
+    .special-offer__item {
+        width: 32.5%;
+    }
+    .special-offer__name {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .menu__image {
+        width: 100px;
+    }
+    .menu__text-block {
+        height: 160px;
+    }
+    .menu__text {
+        font-size: 16px;
+    }
+    .menu__title {
+        font-size: 46px;
+    }
+    .header__title {
+        font-size: 48px;
+        max-width: 505px;
+    }
+    .header__brands {
+        width: 100%;
+    }
+    .header__brand {
+        text-align: center;
+    }
+    .header__brand img {
+        width: 150px;
+    }
+    .header__brand:nth-child(3) img {
+        width: 50px;
+    }
+    .why-us__title {
+        margin-left: 15px;
+    }
+    .about__item-title {
+        font-size: 20px;
+    }
+    .for-partners__name, .for-partners__text {
+        font-size: 14px;
+    }
+    .special-offer__name {
+        font-size: 16px;
+    }
+    .special-offer__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        height: 570px;
+    }
+    .menu {
+        width: 250px;
+        height: max-content;
+        left: -250px;
+        background-position: 0px 0px;
+    }
+    .menu.active {
+        left: 0;
+    }
+    .menu__arrow {
+        position: absolute;
+        top: 0;
+        right: -39px;
+        padding: 5px;
+        background-color: #fcd755;
+        transition: all .3s;
+        display: block;
+    }
+    .menu__arrow img {
+        width: 30px;
+        transform: rotate(180deg);
+        transition: all .3s;
+    }
+    .menu.active .menu__arrow img {
+        transform: rotate(0deg);
+    }
+    .menu__navigation a {
+        color: #0F1116;
+    }
+    ul.menu__point li, 
+    ul.menu__point li a {
+        color: #0F1116;
+    }
+    .menu__addr::before {
+        content: url(../img/head/geo-black.png);
+        margin-right: 10px;
+    }
+    .menu__tel::before {
+        content: url(../img/head/tel-black.png);
+        margin-right: 10px;
+    }
+    .menu__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -30px;
+        width: 200px;
+    }
+    .header__body,
+    .why-us,
+    .about,
+    .trust-us,
+    .how-work,
+    .for-partners,
+    .special-offer {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    header {
+        height: 500px;
+    }
+    .menu__picture {
+        height: 200px;
+    }
+    .menu__image {
+        width: 70px;
+    }
+    .menu__text-block {
+        height: 130px;
+    }
+    .menu__text {
+        font-size: 12px;
+        line-height: 15px;
+        width: 95px;
+    }
+    .menu__title {
+        font-size: 32px;
+    }
+    
+    .menu__navigation {
+        width: 165px;
+    }
+    .menu__point {
+        width: 210px;
+    }
+    
+    .header__title {
+        font-size: 32px;
+        line-height: 40px;
+        max-width: 445px;
+        margin-bottom: 30px;
+    }
+    .header__brand img {
+        width: 99px;
+    }
+    .header__brand:nth-child(3) img {
+        width: 40px;
+    }
+    .header__button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 577px) {}
+
+@media (max-width: 449px) {}
