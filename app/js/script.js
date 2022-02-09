@@ -38,9 +38,39 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
+
+let tab = document.querySelectorAll('.tabs a');
+
+tab.forEach(elem => {
+  elem.onclick = function() {
+    if(!this.classList.contains('check')) {
+      let currentTab = document.querySelector('.check');
+      currentTab.classList.remove('check');
+      this.classList.add('check');
+    }
+  }
+});
+
+/*Для формы с файлами*/
+$('#refillingCartridges #button').click(function () {
+  $("#refillingCartridges input[type='file']").trigger('click');
+});
+$('#repair #button2').click(function () {
+  $("#repair input[type='file']").trigger('click');
+});
+
+$("#refillingCartridges input[type='file']").change(function () {
+  $('#val').text(this.value.replace(/C:\\fakepath\\/i, ''));
+});
+$("#repair input[type='file']").change(function () {
+  $('#val2').text(this.value.replace(/C:\\fakepath\\/i, ''))
+})
+
+//маска телефона
+$('#tel').inputmask({"mask": "+7 (999) 999-9999"}); 
+$('#tel2').inputmask({"mask": "+7 (999) 999-9999"}); 

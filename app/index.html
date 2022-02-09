@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Сайт думы"> 
-	<meta name="Keywords" content="Ульяновская дума">
-    <title>Дума</title>
+	<meta name="description" content="ИП Жихарев"> 
+	<meta name="Keywords" content="ИП Жихарев">
+    <title>ИП Жихарев</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -245,10 +245,55 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>стоимость услуг</h2>
+      <div class="tabs">
+        <a href="#one" class="check">Заправка картриджей</a>
+        <a href="#two">Ремонт оргтехники</a>
+      </div>
+      <div class="tabs-content">
+        <ul>
+            <li id="one">
+                <form id="refillingCartridges" method="post">
+                    <label for="printerName">Название принтера или картриджа</label>
+                    <input name="printerName" id="printerName" type="text" placeholder="Введите название">
+                    <fieldset class="file-block">
+                        <input id="file" type='file' multiple> 
+                        <span class="file-title">Не знаете названий? Пришлите фото.</span>
+                        <span id='val'></span>
+                        <span id='button'>Загрузить фото</span>
+                    </fieldset>
+                    <label for="tel">Ваш номер телефона*</label>
+                    <input type="text" name="tel" id="tel" placeholder="+7 000 000 00 00">
+                    <label for="name">Ваше имя*</label>
+                    <input type="text" name="name" id="name" placeholder="ФИО">
+                    <input type="submit" value="Отправить заявку">
+                </form>
+            </li>
+            <li id="two">
+                <form id="repair" method="post">
+                    <label for="printerName2">Название принтера или МФУ</label>
+                    <input name="printerName2" id="printerName2" type="text" placeholder="Введите название">
+                    <fieldset class="file-block">
+                        <input id="file2" type='file' multiple> 
+                        <span class="file-title">Не знаете названий? Пришлите фото.</span>
+                        <span id='val2'></span>
+                        <span id='button2'>Загрузить фото</span>
+                    </fieldset>
+                    <label for="tel2">Ваш номер телефона*</label>
+                    <input type="text" name="tel2" id="tel2" placeholder="+7 000 000 00 00">
+                    <label for="name2">Ваше имя*</label>
+                    <input type="text" name="name2" id="name2" placeholder="ФИО">
+                    <input type="submit" value="Отправить заявку">
+                </form>
+            </li>
+        </ul>
+      </div>
     </div>
   
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
 <script src="js/script.min.js"></script>
+
 </body>
 </html>
