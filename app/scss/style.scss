@@ -488,7 +488,7 @@ main {
     width: calc(100% - 45px);
     margin-left: 45px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
 }
 .about__item {
@@ -573,11 +573,15 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 .trust-us__manufacturer {
-    width: 20%;
-    margin-right: 20px;
+    width: auto;
+    margin-right: 145px;
     margin-bottom: 100px;
+}
+.trust-us__manufacturer:last-child {
+    margin-right: 5px;
 }
 .trust-us__manufacturer img {
     width: auto;
@@ -739,6 +743,7 @@ footer {
     position: absolute;
     right: 125px;
     top: 10px;
+    text-transform: uppercase;
 }
 
 /* Модальный (фон) */
@@ -944,6 +949,9 @@ footer {
     .menu__navigation {
         margin-bottom: 20px;
     }
+    .trust-us__manufacturer {
+        margin-right: 77px;
+    }
 }
 
 @media (max-width: 1399px) {
@@ -1013,6 +1021,12 @@ footer {
     }
     .about__text {
         text-align: left;
+    }
+    .trust-us__manufacturer {
+        margin-right: 52px;
+    }
+    .trust-us__manufacturer img {
+        max-width: 80%;
     }
     .how-work__item {
         margin: 0px 10px;
@@ -1103,6 +1117,20 @@ footer {
     }
     .special-offer__text {
         font-size: 14px;
+    }
+    .trust-us__manufacturers-text {
+        margin: 50px 0px 60px 10px;
+    }
+    .trust-us__manufacturers {
+        width: calc(100% - 10px);
+        margin-left: 10px;
+        flex-wrap: nowrap;
+    }
+    .trust-us__manufacturer {
+        margin-right: 60px;
+    }
+    .trust-us__manufacturer img {
+        max-width: 100%;
     }
 }
 
@@ -1246,47 +1274,56 @@ footer {
     }
     .why-us__item-title, 
     .why-us__item-title.more {
-        font-size: 16px;
+        font-size: 18px;
     }
     .why-us__item-text, 
     .about__text {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 16px;
     }
     .about__item-title {
         font-size: 18px;
     }
-    .why-us__item-text, 
-    .about__text {
-        font-size: 12px;
-        line-height: 14px;
-    }
     .trust-us__text {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px; 
     }
     .trust-us__manufacturers-block {
         width: 98%;
     }
+    .how-work__list {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .how-work__item {
+        margin: 20px;
+    }
     .how-work__name {
-        font-size: 12px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
     .how-work__text {
-        font-size: 11px;
+        font-size: 14px;
     }
     .how-work__more {
         width: 70%; 
     }
+    .for-partners__list {
+        flex-wrap: wrap;
+    }
+    .for-partners__item {
+        width: 30%;
+        margin-bottom: 20px;
+    }
     .for-partners__name, 
     .for-partners__text {
-        font-size: 12px;
+        font-size: 16px;
     }
     .special-offer__name {
-        font-size: 14px;
+        font-size: 16px;
     }
     .special-offer__text {
-        font-size: 12px;
+        font-size: 14px;
     }
     .footer__copyright {
         right: 20px;
@@ -1343,7 +1380,7 @@ footer {
         margin: 1%;
     }
     .trust-us__brand {
-        width: 30%;
+        width: 48%;
     }
     .how-work__item {
         margin: 10px;
@@ -1368,6 +1405,9 @@ footer {
     }
     .tabs-content {
         width: 96%;
+    }
+    .trust-us__manufacturer {
+        margin-right: 30px;
     }
 
 }
@@ -1436,5 +1476,8 @@ footer {
     }
     .tabs-content {
         height: 380px;
+    }
+    .trust-us__manufacturer {
+        margin-right: 15px;
     }
 }
