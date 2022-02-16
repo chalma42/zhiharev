@@ -63,7 +63,10 @@ function build() {
         'app/css/style.css',
         'app/fonts/**/*',
         'app/js/**/*.js',
-        'app/*.html'
+        'app/*.html',
+        'app/*.svg',
+        'app/*.pdf',
+        'app/**/*.php'
     ], {base: 'app'})
     .pipe(dest('dist'))
 }

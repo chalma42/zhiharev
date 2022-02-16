@@ -5,36 +5,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="ИП Жихарев"> 
 	<meta name="Keywords" content="ИП Жихарев">
-    <title>ИП Жихарев</title>
+    <title>Заправки картриджей Ульяновск - ИП Жихарев</title>
     <link rel="icon" href="favicon.svg">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
 <header>
-    <div class="menu">
+    <div class="menu" itemscope itemtype="http://schema.org/Organization">
         <div class="menu__arrow"><img src="img/head/arrow.png"></div>
         <div class="menu__picture">
-            <img class="menu__image" src="img/head/gas-station.png" alt="" title="">
+            <img class="menu__image" src="img/head/gas-station.png" alt="" title="" itemprop="logo">
             <div class="menu__text-block">
                 <span class="menu__text">Заправляем всем с 2002 г.</span>
                 <span class="menu__text">В каждом районе города</span>
-                <span class="menu__title">ul-print</span>
+                <span class="menu__title" itemprop="name">ul-print</span>
             </div>
         </div>
         <button class="menu__button myBtn">Узнать стоимость</button>
         <ul class="menu__navigation">
+            <!--
             <li><a href="/">О компании</a></li>
             <li><a href="/">Стать партнёром</a></li>
-            <li><a href="/">Прайс-лист</a></li>
+            -->
+            <li><a href="price.pdf" target="_blank">Прайс-лист</a></li>
         </ul>
-        <ul class="menu__point">
-            <li class="menu__addr">ул. Ленина, 122</li>
-            <li class="menu__tel"><a href="#">8 (422) 41-06-03</a></li>
+        <ul class="menu__point" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <li class="menu__addr" itemprop="streetAddress">ул. Ленина, 122</li>
+            <li class="menu__tel"><a href="tel:+78422410603" itemprop="telephone">8 (8422) 41-06-03</a></li>
         </ul>
-        <ul class="menu__point">
-            <li class="menu__addr">ул. Промышленная, 53Б</li>
-            <li class="menu__tel"><a href="#">8 (422) 65-45-56</a></li>
+        <ul class="menu__point" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <li class="menu__addr" itemprop="streetAddress">ул. Промышленная, 53Б</li>
+            <li class="menu__tel"><a href="tel:+78422654556" itemprop="telephone">8 (8422) 65-45-56</a></li>
         </ul>
     </div>
     <div class="header__body">
@@ -53,7 +55,7 @@
                 <img src="img/head/kyocera.svg" alt="" title="">
             </li>
         </ul>
-        <button class="header__button myBtn">Узнать стоимость</button>
+        <button class="header__button myBtn">Оформить заявку</button>
     </div>
 </header>
 <main>
@@ -72,12 +74,12 @@
                 <li class="why-us__item master">
                     <div class="why-us__item-text-block">
                         <h4 class="why-us__item-title">Бесплатный вызов мастера</h4>
-                        <p class="why-us__item-text">Возможен бесплатный вызов мастера в нестандартных ситуациях для привилегированных клиентов</p>
+                        <p class="why-us__item-text">Возможен бесплатный вызов мастера в нестандартных ситуациях для <b>привилегированных клиентов</b></p>
                     </div>
                 </li>
                 <li class="why-us__item consultation">
                     <div class="why-us__item-text-block">
-                        <h4 class="why-us__item-title">Бесплатная консультация онлайн</h4>
+                        <h4 class="why-us__item-title">Бесплатная консультация</h4>
                     </div>
                 </li>
             </ul>
@@ -166,7 +168,7 @@
             </li>
             <li class="how-work__item">
                 <img class="how-work__image" src="img/how-work/2.png" alt="" title="">
-                <span class="how-work__name">Курьер заберёт ваш принтер или МФУ</span>
+                <span class="how-work__name">Курьер заберет Картридж принтер или МФУ</span>
                 <span class="how-work__text">Курьер оставит вам расписку.</span>
             </li>
             <li class="how-work__item">
@@ -191,12 +193,12 @@
             <li class="for-partners__item">
                 <img class="for-partners__image" src="img/partners/1.png" alt="" title="">
                 <span class="for-partners__name">Заправляем картридж</span>
-                <span class="for-partners__text">Оперативно и качественно</span>
+                <span class="for-partners__text"></span>
             </li>
             <li class="for-partners__item">
                 <img class="for-partners__image" src="img/partners/2.png" alt="" title="">
                 <span class="for-partners__name">От 250 ₽</span>
-                <span class="for-partners__text">Стоимость заправки</span>
+                <span class="for-partners__text"></span>
             </li>
             <li class="for-partners__item">
                 <img class="for-partners__image" src="img/partners/3.png" alt="" title="">
@@ -231,10 +233,11 @@
                 <span class="special-offer__name">Возможен бесплатный выезд менеджера для заключения договора и презентации услуг</span>
             </li>
         </ul>
+        <button class="special-offer__button myBtn2">Стать партнером</button>
     </section>
 </main>
 <footer>
-    <span class="footer__copyright">&copy; Agatech 2022</span>
+    <span class="footer__copyright">&copy; Agatech 2022 - Разработка и сопровождение сайта</span>
 </footer>
 
 
@@ -246,6 +249,7 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>стоимость услуг</h2>
+      <div id="my_form_message"></div>
       <div class="tabs">
         <a href="#one" class="check">Заправка картриджей</a>
         <a href="#two">Ремонт оргтехники</a>
@@ -253,11 +257,12 @@
       <div class="tabs-content">
         <ul>
             <li id="one">
-                <form id="refillingCartridges" method="post">
+                <form id="refillingCartridges" method="post" enctype="multipart/form-data" >
+                	<input type="hidden" name="form_type" value="refilling">
                     <label for="printerName">Название принтера или картриджа</label>
                     <input name="printerName" id="printerName" type="text" placeholder="Введите название">
                     <fieldset class="file-block">
-                        <input id="file" type='file' multiple> 
+                        <input id="file" type='file' name='file[]' multiple> 
                         <span class="file-title">Не знаете названий? Пришлите фото.</span>
                         <span id='val'></span>
                         <span id='button'>Загрузить фото</span>
@@ -266,23 +271,28 @@
                     <input type="text" name="tel" id="tel" placeholder="+7 000 000 00 00">
                     <label for="name">Ваше имя*</label>
                     <input type="text" name="name" id="name" placeholder="ФИО">
+
                     <input type="submit" value="Отправить заявку">
                 </form>
+
             </li>
             <li id="two">
                 <form id="repair" method="post">
+                	<input type="hidden" name="form_type" value="repair">
                     <label for="printerName2">Название принтера или МФУ</label>
-                    <input name="printerName2" id="printerName2" type="text" placeholder="Введите название">
+                    <input name="printerName" id="printerName2" type="text" placeholder="Введите название">
+                    <label for="error">Описание неисправности(кратко)</label>
+                    <input name="error" type="text" placeholder="Пример: Принтер жует бумагу">
                     <fieldset class="file-block">
-                        <input id="file2" type='file' multiple> 
+                        <input id="file2" type='file' name='file[]' multiple> 
                         <span class="file-title">Не знаете названий? Пришлите фото.</span>
                         <span id='val2'></span>
                         <span id='button2'>Загрузить фото</span>
                     </fieldset>
-                    <label for="tel2">Ваш номер телефона*</label>
-                    <input type="text" name="tel2" id="tel2" placeholder="+7 000 000 00 00">
-                    <label for="name2">Ваше имя*</label>
-                    <input type="text" name="name2" id="name2" placeholder="ФИО">
+                    <label for="tel">Ваш номер телефона*</label>
+                    <input type="text" name="tel" id="tel2" placeholder="+7 000 000 00 00">
+                    <label for="name">Ваше имя*</label>
+                    <input type="text" name="name" id="name2" placeholder="ФИО">
                     <input type="submit" value="Отправить заявку">
                 </form>
             </li>
@@ -291,6 +301,29 @@
     </div>
   
 </div>
+
+<div id="myModal2" class="modal">
+    <!-- Модальное содержание -->
+    <div class="modal-content">
+        <span class="close2">&times;</span>
+        <h2>стать партнером</h2>
+        <div id="my_form_message2"></div>
+        <form id="beParnter" method="post" >
+            <input type="hidden" name="form_type" value="bePartner">
+            <label for="name">ФИО*</label>
+            <input type="text" name="name" placeholder="ФИО">
+            <label for="tel">Телефон*</label>
+            <input type="text" name="tel" id="tel3" placeholder="+7 (___) ___-____">
+            <label for="org">Название организации</label>
+            <input type="text" name="org" placeholder="ООО AGATECH">
+            <input type="submit" value="Стать партнером">
+        </form>
+      
+    </div>
+  
+</div>
+
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
