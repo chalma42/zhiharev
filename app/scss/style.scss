@@ -774,24 +774,22 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all .3s;
 }
 
 .trust-us__brand {
-  width: 19%;
+  width: 23%;
+  margin: 1%;
   text-align: center;
   margin-bottom: 50px;
+  transition: all .3s;
 }
 
 .trust-us__brand img {
-  width: auto;
+  width: 98%;
   max-width: 100%;
 }
 
@@ -914,20 +912,29 @@ main {
   max-width: 200px;
 }
 
-.how-work__text {
-  font-size: 14px;
-  text-align: center;
-  max-width: 200px;
-}
-
 .how-work__more {
-  width: 40%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  width: 100%;
+  max-width: 900px;
+  align-self: center;
   background: #F5FAFE;
   padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 140px;
+  background: #F4F8FB;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-left: 45px;
+  transition: all .3s;
+}
+
+.how-work__more::before {
+  content: url("../img/spec/lines.png");
+  transform: rotate(90deg);
+  margin-right: -30px;
   position: relative;
-  right: 3%;
+  top: 0px;
 }
 
 /*Партнёрам*/
@@ -1518,6 +1525,10 @@ ul.menu__point li a {
   .trust-us__manufacturer {
     margin-right: 77px;
   }
+  .how-work__more {
+    padding: 10px;
+    max-width: 700px;
+  }
 }
 @media (max-width: 1399px) {
   .menu {
@@ -1615,10 +1626,6 @@ ul.menu__point li a {
 
   .how-work__name {
     font-size: 14px;
-  }
-
-  .how-work__text {
-    font-size: 13px;
   }
 
   .trust-us__brands {
@@ -1742,6 +1749,9 @@ ul.menu__point li a {
 
   .trust-us__manufacturer img {
     max-width: 100%;
+  }
+  .how-work__more {
+    max-width: 600px;
   }
 }
 @media (max-width: 1024px) {
@@ -1959,15 +1969,9 @@ ul.menu__point li a {
     font-size: 16px;
     margin-bottom: 10px;
   }
-
-  .how-work__text {
-    font-size: 14px;
-  }
-
   .how-work__more {
-    width: 70%;
+    max-width: 500px;
   }
-
   .for-partners__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2072,7 +2076,12 @@ ul.menu__point li a {
     margin: 10px;
     width: 40%;
   }
-
+  .how-work__more {
+    max-width: 400px;
+    margin-left: 0px;
+    padding: 5px;
+    height: 260px;
+  }
   .for-partners__item {
     width: 30%;
     margin: 1%;
@@ -2202,5 +2211,8 @@ ul.menu__point li a {
 
   .trust-us__manufacturer {
     margin-right: 15px;
+  }
+  .how-work__more {
+    height: 240px;
   }
 }
